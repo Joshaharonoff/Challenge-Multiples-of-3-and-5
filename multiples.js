@@ -6,11 +6,12 @@
 
 function sumOfAMultiple(n){
 	var newArray=[]
-	for(i=1;;i<=n;i++){
+	var result=0;
+	for(i=1;i<n;i++){
 		if(i%3===0 && i%5!==0){
 			newArray.push(i)
 		}
-		else if (i%5!==0){
+		else if (i%5===0){
 			newArray.push(i)
 		}
 	}
@@ -19,3 +20,5 @@ function sumOfAMultiple(n){
 	}
 	return result
 }
+
+sumOfAMultiple(10)
